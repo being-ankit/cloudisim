@@ -1,0 +1,82 @@
+[
+  {
+    "taskId": 1,
+    "taskLength": 5000,
+    "deadline": 8.0,
+    "budget": 1.5,
+    "priority": 8,
+    "arrivalTime": 0.0
+  },
+  {
+    "taskId": 2,
+    "taskLength": 3000,
+    "deadline": 5.0,
+    "budget": 1.0,
+    "priority": 6,
+    "arrivalTime": 0.1
+  },
+  {
+    "taskId": 3,
+    "taskLength": 8000,
+    "deadline": 12.0,
+    "budget": 2.0,
+    "priority": 9,
+    "arrivalTime": 0.2
+  },
+  {
+    "taskId": 4,
+    "taskLength": 2000,
+    "deadline": 4.0,
+    "budget": 0.8,
+    "priority": 5,
+    "arrivalTime": 0.3
+  },
+  {
+    "taskId": 5,
+    "taskLength": 6000,
+    "deadline": 10.0,
+    "budget": 1.8,
+    "priority": 7,
+    "arrivalTime": 0.4
+  },
+  {
+    "taskId": 6,
+    "taskLength": 4000,
+    "deadline": 6.0,
+    "budget": 1.2,
+    "priority": 6,
+    "arrivalTime": 0.5
+  },
+  {
+    "taskId": 7,
+    "taskLength": 7000,
+    "deadline": 11.0,
+    "budget": 2.2,
+    "priority": 8,
+    "arrivalTime": 0.6
+  },
+  {
+    "taskId": 8,
+    "taskLength": 1500,
+    "deadline": 3.0,
+    "budget": 0.5,
+    "priority": 4,
+    "arrivalTime": 0.7
+  },
+  {
+    "taskId": 9,
+    "taskLength": 9000,
+    "deadline": 15.0,
+    "budget": 2.5,
+    "priority": 10,
+    "arrivalTime": 0.8
+  },
+  {
+    "taskId": 10,
+    "taskLength": 3500,
+    "deadline": 5.5,
+    "budget": 1.1,
+    "priority": 5,
+    "arrivalTime": 0.9
+  }
+]

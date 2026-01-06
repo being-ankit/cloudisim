@@ -1,0 +1,19 @@
+{
+  "alpha": 0.5,
+  "beta": 0.5,
+  "numberOfRuns": 1,
+  "enableVisualization": true,
+  "saveResults": true,
+  "outputDirectory": "output",
+  "enableDeadlineConstraint": true,
+  "enableBudgetConstraint": true,
+  "deadlineTolerance": 0.1,
+  "budgetTolerance": 0.1,
+  "numberOfDatacenters": 1,
+  "numberOfHosts": 1,
+  "hostRam": 16384,
+  "hostStorage": 1000000,
+  "hostBandwidth": 10000,
+  "hostPes": 8,
+  "hostMips": 10000
+}

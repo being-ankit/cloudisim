@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>QoS Task Scheduling Simulation Report</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 20px; }
+h1 { color: #2c3e50; }
+h2 { color: #34495e; border-bottom: 2px solid #3498db; }
+table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+th { background-color: #3498db; color: white; }
+tr:nth-child(even) { background-color: #f2f2f2; }
+.met { color: green; }
+.missed { color: red; font-weight: bold; }
+.metric-card { background: #f8f9fa; padding: 15px; margin: 10px; border-radius: 5px; display: inline-block; }
+</style>
+</head>
+<body>
+<h1>QoS-Aware Multi-Objective Task Scheduling Simulator</h1>
+<p>Report Generated: Tue Jan 06 15:54:40 IST 2026</p>
+<h2>Simulation Parameters</h2>
+<p>Alpha (Time Weight): 0.5</p>
+<p>Beta (Cost Weight): 0.5</p>
+<p>Objective Function: QoS Score = α × Time + β × Cost</p>
+<h2>Performance Comparison</h2>
+<table>
+<tr><th>Scheduler</th><th>Avg Time (s)</th><th>Total Cost ($)</th><th>Makespan (s)</th><th>Deadline Miss %</th><th>QoS Satisfaction %</th></tr>
+<tr><td>QoS-Aware Multi-Objective Scheduler</td><td>1.4459</td><td>4.5071</td><td>27.3172</td><td>0.00</td><td>100.00</td></tr>
+<tr><td>First Come First Serve (FCFS)</td><td>3.9057</td><td>5.6333</td><td>36.2185</td><td>10.00</td><td>90.00</td></tr>
+<tr><td>Random Scheduling</td><td>3.8426</td><td>5.6485</td><td>38.9801</td><td>15.00</td><td>85.00</td></tr>
+<tr><td>Min-Min Scheduling</td><td>2.6565</td><td>5.0893</td><td>12.8696</td><td>5.00</td><td>95.00</td></tr>
+</table>
+<h2>Task Allocation Details</h2>
+<h3>QoS-Aware Multi-Objective Scheduler</h3>
+<table>
+<tr><th>Task</th><th>VM</th><th>Time (s)</th><th>Cost ($)</th><th>Deadline</th><th>Budget</th></tr>
+<tr><td>16</td><td>4</td><td>2.0148</td><td>0.3194</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>1</td><td>4</td><td>1.6789</td><td>0.2655</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>17</td><td>4</td><td>2.3166</td><td>0.3679</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>9</td><td>4</td><td>1.9128</td><td>0.3030</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>20</td><td>4</td><td>0.4501</td><td>0.0681</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>14</td><td>4</td><td>0.7210</td><td>0.1116</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>3</td><td>4</td><td>2.0454</td><td>0.3243</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>7</td><td>4</td><td>0.2867</td><td>0.0418</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>18</td><td>4</td><td>1.5797</td><td>0.2495</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>2</td><td>4</td><td>1.0214</td><td>0.1598</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>5</td><td>4</td><td>1.3377</td><td>0.2107</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>4</td><td>4</td><td>1.3236</td><td>0.2084</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>19</td><td>4</td><td>1.0438</td><td>0.1634</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>12</td><td>4</td><td>1.9716</td><td>0.3125</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>6</td><td>4</td><td>2.1470</td><td>0.3406</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>11</td><td>4</td><td>0.6869</td><td>0.1061</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>15</td><td>4</td><td>2.2342</td><td>0.3546</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>13</td><td>4</td><td>1.1506</td><td>0.1806</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>10</td><td>4</td><td>1.3943</td><td>0.2197</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>8</td><td>3</td><td>1.6018</td><td>0.1994</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+</table>
+<h3>First Come First Serve (FCFS)</h3>
+<table>
+<tr><th>Task</th><th>VM</th><th>Time (s)</th><th>Cost ($)</th><th>Deadline</th><th>Budget</th></tr>
+<tr><td>1</td><td>1</td><td>9.3165</td><td>0.4614</td><td class='missed'>MISSED</td><td class='met'>Met</td></tr>
+<tr><td>2</td><td>2</td><td>2.2181</td><td>0.1831</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>3</td><td>3</td><td>3.0461</td><td>0.3849</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>4</td><td>4</td><td>1.3236</td><td>0.2084</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>5</td><td>5</td><td>3.9686</td><td>0.2343</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>6</td><td>1</td><td>11.9244</td><td>0.5920</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>7</td><td>2</td><td>0.6449</td><td>0.0479</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>8</td><td>3</td><td>1.6018</td><td>0.1994</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>9</td><td>4</td><td>1.9128</td><td>0.3030</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>10</td><td>5</td><td>4.1350</td><td>0.2444</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>11</td><td>1</td><td>3.7893</td><td>0.1844</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>12</td><td>2</td><td>4.2529</td><td>0.3579</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>13</td><td>3</td><td>1.7178</td><td>0.2143</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>14</td><td>4</td><td>0.7210</td><td>0.1116</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>15</td><td>5</td><td>6.6027</td><td>0.3944</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>16</td><td>1</td><td>11.1882</td><td>0.5551</td><td class='missed'>MISSED</td><td class='met'>Met</td></tr>
+<tr><td>17</td><td>2</td><td>4.9916</td><td>0.4214</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>18</td><td>3</td><td>2.3548</td><td>0.2961</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>19</td><td>4</td><td>1.0438</td><td>0.1634</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>20</td><td>5</td><td>1.3606</td><td>0.0757</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+</table>
+<h3>Random Scheduling</h3>
+<table>
+<tr><th>Task</th><th>VM</th><th>Time (s)</th><th>Cost ($)</th><th>Deadline</th><th>Budget</th></tr>
+<tr><td>1</td><td>1</td><td>9.3165</td><td>0.4614</td><td class='missed'>MISSED</td><td class='met'>Met</td></tr>
+<tr><td>2</td><td>4</td><td>1.0214</td><td>0.1598</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>3</td><td>4</td><td>2.0454</td><td>0.3243</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>4</td><td>5</td><td>3.9272</td><td>0.2318</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>5</td><td>1</td><td>7.4155</td><td>0.3661</td><td class='missed'>MISSED</td><td class='met'>Met</td></tr>
+<tr><td>6</td><td>1</td><td>11.9244</td><td>0.5920</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>7</td><td>1</td><td>1.5595</td><td>0.0727</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>8</td><td>4</td><td>1.0725</td><td>0.1681</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>9</td><td>5</td><td>5.6585</td><td>0.3370</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>10</td><td>4</td><td>1.3943</td><td>0.2197</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>11</td><td>3</td><td>1.0293</td><td>0.1259</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>12</td><td>3</td><td>2.9365</td><td>0.3708</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>13</td><td>2</td><td>2.4949</td><td>0.2069</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>14</td><td>3</td><td>1.0801</td><td>0.1324</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>15</td><td>2</td><td>4.8151</td><td>0.4062</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>16</td><td>3</td><td>3.0007</td><td>0.3791</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>17</td><td>2</td><td>4.9916</td><td>0.4214</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>18</td><td>1</td><td>8.7641</td><td>0.4337</td><td class='missed'>MISSED</td><td class='met'>Met</td></tr>
+<tr><td>19</td><td>4</td><td>1.0438</td><td>0.1634</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>20</td><td>5</td><td>1.3606</td><td>0.0757</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+</table>
+<h3>Min-Min Scheduling</h3>
+<table>
+<tr><th>Task</th><th>VM</th><th>Time (s)</th><th>Cost ($)</th><th>Deadline</th><th>Budget</th></tr>
+<tr><td>7</td><td>4</td><td>0.2867</td><td>0.0418</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>20</td><td>3</td><td>0.6778</td><td>0.0808</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>11</td><td>4</td><td>0.6869</td><td>0.1061</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>14</td><td>2</td><td>1.5750</td><td>0.1278</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>2</td><td>4</td><td>1.0214</td><td>0.1598</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>19</td><td>3</td><td>1.5592</td><td>0.1940</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>8</td><td>4</td><td>1.0725</td><td>0.1681</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>13</td><td>5</td><td>3.4189</td><td>0.2009</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>4</td><td>3</td><td>1.9746</td><td>0.2473</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>5</td><td>4</td><td>1.3377</td><td>0.2107</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>10</td><td>2</td><td>3.0168</td><td>0.2517</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>18</td><td>4</td><td>1.5797</td><td>0.2495</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>1</td><td>3</td><td>2.5020</td><td>0.3150</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>9</td><td>4</td><td>1.9128</td><td>0.3030</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>12</td><td>2</td><td>4.2529</td><td>0.3579</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>16</td><td>5</td><td>5.9582</td><td>0.3552</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>3</td><td>3</td><td>3.0461</td><td>0.3849</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>6</td><td>4</td><td>2.1470</td><td>0.3406</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>15</td><td>4</td><td>2.2342</td><td>0.3546</td><td class='met'>Met</td><td class='met'>Met</td></tr>
+<tr><td>17</td><td>1</td><td>12.8696</td><td>0.6394</td><td class='missed'>MISSED</td><td class='met'>Met</td></tr>
+</table>
+<h2>Visual Charts</h2>
+<p>Charts are saved as PNG files in the output directory:</p>
+<ul>
+<li>execution_time_comparison.png</li>
+<li>cost_comparison.png</li>
+<li>deadline_miss_comparison.png</li>
+<li>qos_satisfaction_comparison.png</li>
+<li>makespan_comparison.png</li>
+</ul>
+</body>
+</html>
